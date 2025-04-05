@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/taskDetailLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/windowBackground">
+
+    <!-- Task Title -->
+    <TextView
+        android:id="@+id/taskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task Name"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:paddingBottom="12dp" />
+
+    <!-- RecyclerView for Subtasks -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/subtaskRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="8dp" />
+
+    <!-- Add New Subtask -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:id="@+id/addSubtaskButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ Add Tasks" />
+    </LinearLayout>
+</LinearLayout>
